@@ -35,15 +35,13 @@
 /* another search bar */
 
 .navbar>.container-fluid {
+    background-color: black;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
 }
 
-/* .modal-footer{
-    justify-content: start;
-} */
 
 .navbar-toggler {
     border: none;
@@ -58,4 +56,44 @@
 
 #offcanvas-li {
     color: white;
+}
+
+.gh-foot {
+    color: #333;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+    white-space: nowrap;
+}
+
+.gh-foot-inner {
+    color: rgb(155, 155, 155);
+    display: grid;
+    font-size: 15px;
+    gap: 40px;
+    grid-template-columns: 7fr auto 1fr;
+}
+
+.gh-inner {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+a {
+    color: rgb(155, 155, 155);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .gh-foot-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #article-image {
+        width: 100%;
+    }
 }
